@@ -1,0 +1,59 @@
+# 🫀 Heart Disease Prediction Using Machine Learning
+
+## 📌 Project Overview
+This machine learning project predicts the likelihood of a patient having heart disease based on medical attributes. It uses three classification models — **Logistic Regression**, **Random Forest**, and **K-Nearest Neighbors (KNN)** — to compare performance and identify the most accurate approach.
+
+---
+
+## 📊 Dataset
+- **File**: `heart.csv`
+- **Source**: [Kaggle Heart Disease Dataset](https://www.kaggle.com/)
+- **Target Variable**: `target`  
+  - `1` → Patient has heart disease  
+  - `0` → No heart disease
+
+### 🔢 Features Used
+- `age`, `sex`, `cp` (chest pain type), `trestbps` (resting blood pressure), `chol` (cholesterol), `fbs` (fasting blood sugar),  
+- `restecg`, `thalach`, `exang`, `oldpeak`, `slope`, `ca`, `thal`, etc.
+
+---
+
+## 🛠️ Tools & Libraries
+- Python (Google Colab)
+- `pandas`, `numpy`, `matplotlib`, `seaborn` for data analysis & visualization
+- `scikit-learn` for ML models & evaluation
+
+---
+
+## 🧠 Machine Learning Models
+1. **Logistic Regression** — A simple and interpretable linear model
+2. **Random Forest** — An ensemble of decision trees, often better at capturing complex relationships
+3. **K-Nearest Neighbors (KNN)** — A distance-based model that classifies based on similarity
+
+---
+
+## 📈 Workflow
+1. Load and explore the dataset
+2. Preprocess the data (train-test split + standardization)
+3. Train Logistic Regression, Random Forest, and KNN models
+4. Evaluate each using Accuracy, F1 Score, Confusion Matrix
+5. Compare the models in a summary table
+
+---
+
+## 📋 Model Performance Summary
+
+| Model                | Accuracy | F1 Score |
+|---------------------|----------|----------|
+| Logistic Regression | 0.985366 | 0.985222 |
+| Random Forest       | 0.834146 | 0.844037 |
+| K-Nearest Neighbors | 0.795122 | 0.810811 |
+
+---
+
+## 📍 Insights
+- **Random Forest** usually performs best due to its ability to model complex patterns.
+- **Logistic Regression** offers good interpretability and strong baseline performance.
+- **KNN** is sensitive to feature scaling and performs well with the right preprocessing.
+
+---
